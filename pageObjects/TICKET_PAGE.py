@@ -25,8 +25,8 @@ class TICKET_PAGE:
     def test_fName(self,fname):
 
         self.driver.find_element(By.NAME,self.fName).send_keys(fname)
-        flag= self.driver.find_element(By.NAME,self.fName)
-        self.driver.excute_script["arguments[0],scrollIntoView;",flag] #"arguments[0].scrollIntoView();
+        # flag= self.driver.find_element(By.NAME,self.fName)
+        # self.driver.execute_script["arguments[0],scrollIntoView;",flag] #"arguments[0].scrollIntoView();
 
 
     def test_lName(self, lname):
